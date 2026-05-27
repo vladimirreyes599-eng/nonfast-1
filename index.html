@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeonFest</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header class="encabezado">
+
+<nav class="navbar">
+
+<h1 class="logo">NeonFest</h1>
+
+<button class="btn-menu" onclick="toggleMenu()">
+☰
+</button>
+
+<ul class="menu" id="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#eventos">Eventos</a></li>
+<li><a href="#boletos">Boletos</a></li>
+<li><a href="#registro">Registro</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+
+<div class="hero-texto">
+
+<span class="etiqueta">Festival 2026</span>
+
+<h2>
+La experiencia musical más grande del año
+</h2>
+
+<p>
+Disfruta música, comida, arte y experiencias
+increíbles en un solo lugar.
+</p>
+
+<button onclick="mostrarPromo()">
+Ver promoción
+</button>
+
+</div>
+
+<div class="hero-imagen">
+<img src="portada.jpg" alt="Festival">
+</div>
+
+</section>
+
+<!-- EVENTOS -->
+<section class="seccion" id="eventos">
+
+<h2>Eventos</h2>
+
+<p class="descripcion">
+Explora las mejores experiencias del festival.
+</p>
+
+<div class="contenedor-tarjetas">
+
+<div class="tarjeta">
+<img src="musica.jpg" alt="Música">
+
+<div class="tarjeta-info">
+<h3>Música en vivo</h3>
+
+<p>
+Bandas y DJs internacionales durante
+todo el festival.
+</p>
+</div>
+
+</div>
+
+<div class="tarjeta">
+
+<img src="comida.jpg" alt="Comida">
+
+<div class="tarjeta-info">
+
+<h3>Zona gastronómica</h3>
+
+<p>
+Prueba comida internacional y bebidas
+especiales.
+</p>
+
+</div>
+
+</div>
+
+<div class="tarjeta">
+
+<img src="arte.jpg" alt="Arte">
+
+<div class="tarjeta-info">
+
+<h3>Arte y luces</h3>
+
+<p>
+Instalaciones visuales y experiencias
+interactivas.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BOLETOS -->
+<section class="seccion boletos" id="boletos">
+
+<h2>Boletos</h2>
+
+<p class="descripcion">
+Selecciona el plan ideal para ti.
+</p>
+
+<div class="planes">
+
+<div class="plan">
+
+<h3>Básico</h3>
+
+<div class="precio">$500</div>
+
+<p>Acceso general al festival.</p>
+
+<button onclick="seleccionarBoleto('Básico')">
+Seleccionar
+</button>
+
+</div>
+
+<div class="plan destacado">
+
+<h3>VIP</h3>
+
+<div class="precio">$1200</div>
+
+<p>Acceso VIP y zona exclusiva.</p>
+
+<button onclick="seleccionarBoleto('VIP')">
+Seleccionar
+</button>
+
+</div>
+
+<div class="plan">
+
+<h3>Premium</h3>
+
+<div class="precio">$2000</div>
+
+<p>Experiencia completa y backstage.</p>
+
+<button onclick="seleccionarBoleto('Premium')">
+Seleccionar
+</button>
+
+</div>
+
+</div>
+
+<p id="boletoSeleccionado"></p>
+
+</section>
+
+<!-- FORMULARIO -->
+<section class="seccion registro" id="registro">
+
+<h2>Registro</h2>
+
+<p class="descripcion">
+Completa el formulario para recibir información.
+</p>
+
+<form class="formulario">
+
+<label>Nombre</label>
